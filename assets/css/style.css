@@ -144,11 +144,11 @@ h6 {
   }
 }
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   #main {
     margin-left: 100px;
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -287,7 +287,12 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.8);
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.4),
+    70%,
+    rgba(255, 255, 255, 0)
+  );
   position: absolute;
   bottom: 0;
   top: 0;
@@ -410,15 +415,21 @@ section {
   height: 100vh;
   vertical-align: middle;
   width: 2000px;
+  background-image: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(108, 117, 125, 0.1)
+  );
 }
 
-.about-inner {
-  padding-top: 100px !important;
-}
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
   color: #728394;
+}
+
+.about-title {
+  text-align: center;
 }
 
 .about .content ul {
@@ -454,6 +465,13 @@ section {
 /*--------------------------------------------------------------
 # Akills
 --------------------------------------------------------------*/
+.skills {
+  background-image: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(108, 117, 125, 0.1)
+  );
+}
 .skills .progress {
   height: 60px;
   display: block;
@@ -490,6 +508,13 @@ section {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
+.resume {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(108, 117, 125, 0.1),
+    transparent
+  );
+}
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
@@ -779,6 +804,13 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.services {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(108, 117, 125, 0.1),
+    transparent
+  );
+}
 .services .icon-box {
   text-align: center;
   padding: 70px 20px 80px 20px;
@@ -1137,7 +1169,6 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #f7f8f9;
   color: #45505b;
   font-size: 14px;
   text-align: center;
